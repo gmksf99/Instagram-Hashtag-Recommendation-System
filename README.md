@@ -1,6 +1,5 @@
-# Instagram-Hashtag-Recommendation-System
+# 졸업작품 : Instagram-Hashtag-Recommendation-System
 
-# 졸업작품
 <h1 align="center">
   <img src = "https://github.com/gmksf99/Instagram-Hashtag-Recommendation-System/blob/9bec0ffe46cce1f2a949039765c012c2cfb9ecae/img/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG" width = "1000px"/><br/>
 
