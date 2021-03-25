@@ -14,5 +14,3 @@
   <img src = "img/슬라이드10.PNG" width = "1000px"/><br/>
   
 </h1>
-
-+ 추가 업로드 
