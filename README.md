@@ -5,7 +5,7 @@
 
   <img src = "img/슬라이드2.PNG" width = "1000px"/><br/>
   <img src = "img/슬라이드3.PNG" width = "1000px"/><br/>
-  <img src = "img/4.PNG" width = "1000px"/><br/>
+  <img src = "img/4번.PNG" width = "1000px"/><br/>
   <img src = "img/슬라이드5.PNG" width = "1000px"/><br/>
   <img src = "img/슬라이드6.PNG" width = "1000px"/><br/>
   <img src = "img/슬라이드7.PNG" width = "1000px"/><br/>
