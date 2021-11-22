@@ -1,0 +1,252 @@
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>TAG_ME</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="static/img/instagram.ico" type="image/x-icon" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+        rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="static/styles.css" />
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">TAG ME</a>
+                <button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="/introduce">작품 소개</a></li>
+
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="/member">팀원 소개</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+
+<!-- 이미지 넣기 -->
+                <p class="food-name"><span id="result">사진을 첨부해주세요:D</span></p>
+                
+                <img src='static/uploads/alterImg.png' width="auto" height="400" id="imgteg"/>
+                    
+                </div>
+                
+                <br>
+                    <form action="/uploads" method="post" enctype="multipart/form-data" id="form">
+                        <!--formaction="/predict" formaction="/result" -->
+                        <div class="filebox">
+                            <p id="identification" class="certifyText">사진과 결과가 다르다면 <a id="editName" class="editFoodName" href="javascript:void(0);">여기</a>를 눌러서 수정해주세요.</p>
+                            <label for="uploadFile">Photo</label>
+                            <input type="file" class="file-input" id="uploadFile" >
+                            
+                            <button type="submit" class="subm" id="classify">Classify</button>
+                            <button type="button" class="btn2" id ="classify2" disabled="disabled">Classify</button>
+                            
+                            <button type="button" class="subm" id ="teg_submit1" >Submit</button>
+                            <button type="button" class="btn2" id ="teg_submit2" disabled="disabled" onclick="location.href='/result'">Submit</button>
+                        </div>
+                    </form>
+               
+                    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                    <script src="https://unpkg.com/htmx.org@1.5.0" ></script>
+                    
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0"><br><br><br><br></p>
+            </div>
+        </header>
+
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">개발중</h4>
+                        <p class="lead mb-0"></p>
+                    </div>
+
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"></h4>
+                        <!-- a태그 잘 보기. 이미지 어디서 끌어오는지. js를 봐야할 듯. -->
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a> <a
+                            class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-twitter"></i></a> <a
+                            class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a> <a
+                            class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">개발중</h4>
+                        <p class="lead mb-0">
+                            <a href=".">Start Bootstrap</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small> Copyright &copy; TAG ME <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </small>
+            </div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded"
+                href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        <script type="text/javascript">
+    <!-- 이미지 검증 ajax 함수 -->
+    $("#form").submit(function(event) {
+        event.preventDefault(); //폼 제출 방지
+        var formData = new FormData();
+        formData.append("file", $("#uploadFile").prop("files")[0]);
+        $.ajax({
+            type: "post",
+            url: "/predict",
+            data: formData, 
+            contentType: false,
+            processData: false,
+            success: function(data){
+                 $("#result").html(data);
+            }
+        });   
+    }); 
+          
+<!-- 이미지 검증 ajax 함수 끝 -->
+
+<!-- 버튼 활성/비활성화 -->
+    
+    //페이지 로드와 동시에 실행
+    window.onload=function(){
+      $('#teg_submit1').hide();
+      $('#classify').hide();
+      $('#identification').hide();
+    }
+            
+    $(function(){
+    $('#uploadFile').click(function(){
+        $('#classify').show();
+        $('#classify2').hide();
+          });
+      });
+            
+    $(function(){
+    $('#classify').click(function(){
+        $('#teg_submit1').show();
+        $('#teg_submit2').hide();
+        setTimeout(function() {
+            $('#identification').show();
+        }, 0);
+          });
+      });
+            
+    <!-- 버튼 활성/비활성화 끝-->
+    <!-- result 이동 함수 -->
+     
+    $(function(){
+    $('#teg_submit1').click(function(){
+        location.href='/result'
+        
+          });
+      });
+            
+    <!-- result 이동 함수 끝 -->
+            
+    <!-- 이미지 미리보기 함수 -->       
+  function readImage(input) {
+    // 인풋 태그에 파일이 있는 경우
+    if(input.files && input.files[0]) {
+        // 이미지 파일인지 검사 (생략)
+        // FileReader 인스턴스 생성
+        const reader = new FileReader()
+        // 이미지가 로드가 된 경우
+        reader.onload = e => {
+        const previewImage = document.getElementById("imgteg")
+            previewImage.src = e.target.result
+            }
+        // reader가 이미지 읽도록 하기
+        reader.readAsDataURL(input.files[0])
+        }
+    }
+    // input file에 change 이벤트 부여
+    const inputImage = document.getElementById("uploadFile")
+        inputImage.addEventListener("change", e => {
+            readImage(e.target)
+    })
+            
+    <!-- 이미지 미리보기 함수 끝 -->
+            
+    <!-- 음식 이름 수정 함수 -->
+    $(function(){
+    $('#editName').click(function(){
+       var editName = prompt("음식의 이름을 입력해주세요.");
+        if(editName != null)
+            document.getElementById("result").innerHTML = editName;
+            console.log('음식이름 변경 값: '  +  editName);
+          });
+      });     
+    <!-- 음식 이름 수정 함수 끝 -->
+            
+    <!-- 분석 값 저장 함수 -->
+     $("#B").click(function(){
+        var filename = document.getElementById('result').textContent;
+        console.log('자바스크립트 변수 저장 값: '  +  filename);
+   
+        });
+    <!-- 분석 값 저장 함수 끝 -->
+
+        </script>
+        <script src="static/scripts.js">
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+        </script>
+    </body>
+</html>
